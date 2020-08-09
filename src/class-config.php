@@ -316,6 +316,7 @@ class Config {
 		$supported_fields = [
 			'text',
 			'textarea',
+			'acfe_code_editor',
 			'number',
 			'range',
 			'email',
@@ -397,6 +398,8 @@ class Config {
 			case 'oembed':
 			case 'password':
 			case 'wysiwyg':
+			case 'unique_id':
+			case 'acfe_code_editor':
 			case 'url':
 				// Even though Selects and Radios in ACF can _technically_ be an integer
 				// we're choosing to always cast as a string because with
